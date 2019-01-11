@@ -1,0 +1,29 @@
+
+
+		int n;
+		double sum = 0;
+		cout << "vvedite n";
+		cin >> n;
+		int *massiv = new int[n];
+		for (int i = 0; i < n; i++)
+		{
+			cout << "vvedite massiv[" << i << "] ";
+			cin >> massiv[i];
+		}
+
+
+
+
+		for (int x = 0; x < n; x++)
+		{
+			if (massiv[x] < 0)
+			{
+				for (int a = x + 1; a<n ; a++)
+				{
+					sum += (abs(massiv[a]));
+				}
+				break;
+			}
+		}
+		cout << sum;
+		cin.get();
